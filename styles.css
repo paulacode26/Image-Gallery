@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Animation:*/
+@keyframes fade-in-from-top {
+    0% {
+        opacity: 0;
+        transform: translate(-50% -50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+}
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.icon1, .icon2 {
+    font-size:40px;
+    opacity: 0.6;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #29ADB2;
+}
+
+.img{
+    height: 50%;
+    width: 50%;
+    background-color: #3AA6B9;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    box-shadow: 0 25px 121px rgba(0, 0, 0, 0.5);
+    animation: fade-in-from-top 0.9s;
+}
+
+  
